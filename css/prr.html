@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head lang="es"></head>
+    
+<head>
+    <script type="text/javascript">
+        
+        function funcion_llamada()
+        {
+            alert("llamada desde funcion");
+        }
+        
+  
+       element   
+    </script>
+    
+    </head>
+    <body>
+    <section>
+        
+        <button onclick=" alert('disteonclick')">puchale</button>
+        <br>
+        <button onclick="funcion_llamada()">click llamada</button>
+        <br>
+        
+        <button id="clid">Click id</button>
+        <br>
+        
+        <button id="list">listener</button>
+    <script type="text/javascript">
+    
+          var elemen1=document.getElementById("clid");
+        elemen1.onclick=function(){alert("hola click id")};
+    </script>
+    
+    <script type="application/javascript">
+     var element2=document.getElementById("list");
+         element2.addEventListener("click",llamada,false);
+         function llamada(){
+             
+             alert("usando listener");
+            element2.removeEventListener("click",llamada,false);
+         }
+         
+    </script>
+        </section>
+    </body>
+</html>
